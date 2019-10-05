@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">agendamento-fiap</string>
+    <string name="title">Agendamento de Salas - FIAP</string>
+    <string name="label_matricula">Matricula</string>
+    <string name="label_senha">Senha</string>
+    <string name="button_signon">Entrar</string>
+    <string name="button_register">Cadastrar</string>
+    <string name="label_desc_register">Ainda não tem acesso?</string>
+</resources>

@@ -1,0 +1,99 @@
+<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:background="#ed145b"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="10sp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:text="@string/label_matricula"
+        />
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:padding="10sp"
+        android:id="@+id/matricula"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shapes"
+        android:textColor="#ed145b"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:text="@string/label_senha"
+        />
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:padding="10sp"
+        android:id="@+id/senha"
+        android:inputType="textPassword"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shapes"
+        android:textColor="#ed145b"
+        android:textSize="15sp"
+        />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20sp"
+        android:background="@color/colorAccent"
+        android:text="@string/button_signon"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:text="@string/label_desc_register"
+        android:textColor="#FFF"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20sp"
+        android:background="@color/colorAccent"
+        android:text="@string/button_register"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>
