@@ -15,4 +15,8 @@
     <string name="title_list_request_room">Listando solicitações de sala</string>
     <string name="label_button_list_room">Consultar agendamentos de sala</string>
     <string name="label_button_list_material">Consultar materiais solicitados</string>
+    <string name="label_list_users">Listar usuários</string>
+    <string name="label_id">ID</string>
+    <string name="label_username">Username:</string>
+    <string name="label_password">Password</string>
 </resources>

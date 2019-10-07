@@ -2,13 +2,13 @@ package br.com.fiap.agendamento_fiap;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.List;
 
 import br.com.fiap.agendamento_fiap.db.LoginDb;
 import br.com.fiap.agendamento_fiap.model.User;
@@ -17,6 +17,7 @@ public class RegisterUser extends AppCompatActivity {
 
     EditText fieldUser;
     EditText fieldPassword;
+    List<User> users;
     LoginDb loginDb;
     User user;
 
@@ -29,15 +30,6 @@ public class RegisterUser extends AppCompatActivity {
         fieldUser       =   findViewById(R.id.serial);
         fieldPassword   =   findViewById(R.id.password);
         loginDb = new LoginDb(this);
-
-        Bundle bundle = getIntent().getExtras();
-        if (bundle != null) {
-            user = (User) bundle.get("user");
-            if (user != null) {
-                fieldUser.setText(user.getUsername());
-                fieldPassword.setText((user.getPassword()));
-            }
-        }
 
     }
 

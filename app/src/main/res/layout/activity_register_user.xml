@@ -73,4 +73,17 @@
         android:onClick="registerUser"
         />
 
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="100sp"
+        android:background="@color/colorAccent"
+        android:text="@string/label_list_users"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:onClick="listRegisteredUsers"
+        />
+
 </LinearLayout>

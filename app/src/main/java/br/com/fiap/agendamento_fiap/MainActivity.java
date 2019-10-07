@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
 
     EditText fieldSerial;
     EditText fieldPassword;
-    User user;
     LoginDb loginDb;
 
     @Override
@@ -40,9 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
         String username = fieldSerial.getText().toString();
         String password = fieldPassword.getText().toString();
+        User user;
         user = loginDb.checkUser(username, password);
-
-        Toast.makeText(this, user.getUsername(), Toast.LENGTH_SHORT).show();
 
         if (username.isEmpty() || password.isEmpty()) {
             Toast.makeText(this, "Informe os campos corretamente", Toast.LENGTH_SHORT).show();
@@ -57,14 +55,14 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-//
-//        if (username.equals(user.getUsername()) && password.equals(user.getPassword()) ) {
-//            Toast.makeText(this, "Usuário cadastrado", Toast.LENGTH_SHORT).show();
-//        } else {
-//            Toast.makeText(this, "Usuário ou senha incorretos", Toast.LENGTH_SHORT).show();
-//        }
 
-        Intent it = new Intent(this, MenuUser.class);
-        startActivity(it);
+        if (username.equals(user.getUsername()) && password.equals(user.getPassword()) ) {
+            Intent it = new Intent(this, MenuUser.class);
+            startActivity(it);
+            Toast.makeText(this, "Usuário cadastrado", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Usuário ou senha incorretos", Toast.LENGTH_SHORT).show();
+        }
+
     }
 }
