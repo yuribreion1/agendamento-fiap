@@ -47,11 +47,13 @@
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
         android:background="@drawable/button_shapes"
-        android:text="@string/label_button_mat"
+        android:text="@string/label_button_list_material"
         android:textColor="#FFF"
         android:backgroundTint="#888"
         android:textStyle="bold"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:onClick="listMaterialRequests"
+        />
 
     <Button
         android:layout_width="300sp"
@@ -60,11 +62,13 @@
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
         android:background="@drawable/button_shapes"
-        android:text="@string/label_button_mat"
+        android:text="@string/label_button_list_room"
         android:textColor="#FFF"
         android:backgroundTint="#888"
         android:textStyle="bold"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:onClick="listRoomRequests"
+        />
 
 
 </LinearLayout>

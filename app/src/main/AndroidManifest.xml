@@ -20,6 +20,8 @@
         <activity android:name=".MenuUser"/>
         <activity android:name=".RequestRoom"/>
         <activity android:name=".RequestMaterial"/>
+        <activity android:name=".ListRequestMaterial"/>
+        <activity android:name=".ListRequestRoom"/>
     </application>
 
 </manifest>

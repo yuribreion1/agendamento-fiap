@@ -24,4 +24,14 @@ public class MenuUser extends AppCompatActivity {
         Intent it = new Intent(this, RequestMaterial.class);
         startActivity(it);
     }
+
+    public void listMaterialRequests(View view) {
+        Intent it = new Intent(this, ListRequestMaterial.class);
+        startActivity(it);
+    }
+
+    public void listRoomRequests(View view) {
+        Intent it = new Intent(this, ListRequestRoom.class);
+        startActivity(it);
+    }
 }

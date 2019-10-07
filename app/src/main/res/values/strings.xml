@@ -11,4 +11,8 @@
     <string name="label_button_mat">Agendamento de material</string>
     <string name="title_request_room">Solicitando sala</string>
     <string name="title_request_material">Solicitando material</string>
+    <string name="title_list_request_material">Listando materiais solicitados</string>
+    <string name="title_list_request_room">Listando solicitações de sala</string>
+    <string name="label_button_list_room">Consultar agendamentos de sala</string>
+    <string name="label_button_list_material">Consultar materiais solicitados</string>
 </resources>
