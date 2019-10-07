@@ -23,7 +23,9 @@
         android:text="@string/label_button_agd"
         android:textColor="#FFF"
         android:textStyle="bold"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:onClick="requestRoom"
+        />
 
     <Button
         android:layout_width="300sp"
@@ -34,7 +36,9 @@
         android:text="@string/label_button_mat"
         android:textColor="#FFF"
         android:textStyle="bold"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:onClick="requestMaterial"
+        />
 
     <Button
         android:layout_width="300sp"

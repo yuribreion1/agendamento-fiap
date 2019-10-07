@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".RegisterUser"/>
         <activity android:name=".MenuUser"/>
+        <activity android:name=".RequestRoom"/>
+        <activity android:name=".RequestMaterial"/>
     </application>
 
 </manifest>

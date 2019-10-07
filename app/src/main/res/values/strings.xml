@@ -9,4 +9,6 @@
     <string name="label_register_user">Cadastrar</string>
     <string name="label_button_agd">Agendamento de sala</string>
     <string name="label_button_mat">Agendamento de material</string>
+    <string name="title_request_room">Solicitando sala</string>
+    <string name="title_request_material">Solicitando material</string>
 </resources>
