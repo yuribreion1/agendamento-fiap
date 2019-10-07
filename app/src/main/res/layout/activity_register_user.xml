@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="15sp"
         android:padding="10sp"
-        android:id="@+id/matricula"
+        android:id="@+id/serial"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/shapes"
         android:textColor="#ed145b"
@@ -44,7 +44,6 @@
         android:textSize="20sp"
         android:textColor="#FFF"
         android:textStyle="bold"
-        android:inputType="number"
         android:text="@string/label_senha"
         />
 
@@ -53,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="15sp"
         android:padding="10sp"
-        android:id="@+id/senha"
+        android:id="@+id/password"
         android:inputType="textPassword"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/shapes"
