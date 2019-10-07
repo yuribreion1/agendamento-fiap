@@ -71,6 +71,7 @@
         android:textColor="#FFF"
         android:textStyle="bold"
         android:textSize="20sp"
+        android:onClick="login"
         />
 
     <TextView

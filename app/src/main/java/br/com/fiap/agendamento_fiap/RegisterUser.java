@@ -12,6 +12,7 @@ public class RegisterUser extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_user);
+        getSupportActionBar().hide();
     }
 
     public void registerUser(View view) {

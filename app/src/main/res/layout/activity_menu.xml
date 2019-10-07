@@ -1,0 +1,66 @@
+<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:background="#ed145b"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="10sp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:background="@drawable/button_shapes"
+        android:text="@string/label_button_agd"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:background="@drawable/button_shapes"
+        android:text="@string/label_button_mat"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:background="@drawable/button_shapes"
+        android:text="@string/label_button_mat"
+        android:textColor="#FFF"
+        android:backgroundTint="#888"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:background="@drawable/button_shapes"
+        android:text="@string/label_button_mat"
+        android:textColor="#FFF"
+        android:backgroundTint="#888"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+
+</LinearLayout>
