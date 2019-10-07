@@ -6,4 +6,5 @@
     <string name="button_signon">Entrar</string>
     <string name="button_register">Cadastrar</string>
     <string name="label_desc_register">Ainda não tem acesso?</string>
+    <string name="label_register_user">Cadastrar</string>
 </resources>

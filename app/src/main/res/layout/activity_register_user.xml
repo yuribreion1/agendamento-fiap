@@ -67,34 +67,11 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="20sp"
         android:background="@color/colorAccent"
-        android:text="@string/button_signon"
+        android:text="@string/label_register_user"
         android:textColor="#FFF"
         android:textStyle="bold"
         android:textSize="20sp"
-        />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40sp"
-        android:text="@string/label_desc_register"
-        android:textColor="#FFF"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:textSize="20sp"
-        />
-
-    <Button
-        android:layout_width="150sp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="20sp"
-        android:background="@color/colorAccent"
-        android:text="@string/button_register"
-        android:textColor="#FFF"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:onClick="register"
+        android:onClick="registerUser"
         />
 
 </LinearLayout>
