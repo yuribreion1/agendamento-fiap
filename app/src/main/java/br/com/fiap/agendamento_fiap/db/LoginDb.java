@@ -5,7 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,5 +66,31 @@ public class LoginDb extends SQLiteOpenHelper {
         cv.put("username", user.getUsername());
         cv.put("password", user.getPassword());
         db.update("user", cv, "id = ?", new String[]{String.valueOf(user.getId())});
+    }
+
+    public List<User> listUsers() {
+        List<User> users = new ArrayList<>();
+
+        SQLiteDatabase db = getReadableDatabase();
+
+        Cursor cursor = db.query(
+                "user",
+                new String[]{"id","username","password"},
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+        if (cursor.moveToFirst()) {
+            do {
+                User user = new User();
+                user.setId(cursor.getInt(0));
+                user.setUsername(cursor.getString(1));
+                user.setPassword(cursor.getString(2));
+                users.add(user);
+            } while (cursor.moveToNext());
+        }
+        return users;
     }
 }

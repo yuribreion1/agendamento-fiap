@@ -2,8 +2,6 @@ package br.com.fiap.agendamento_fiap;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -64,5 +62,10 @@ public class RegisterUser extends AppCompatActivity {
         }
 
         finish();
+    }
+
+    public void listUsers(View view) {
+        Intent it = new Intent(this, ListUsers.class);
+        startActivity(it);
     }
 }
