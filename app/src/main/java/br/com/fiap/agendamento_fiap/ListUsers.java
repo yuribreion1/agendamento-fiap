@@ -11,7 +11,7 @@ import java.util.List;
 import br.com.fiap.agendamento_fiap.db.LoginDb;
 import br.com.fiap.agendamento_fiap.model.User;
 
-class ListUsers extends AppCompatActivity {
+public class ListUsers extends AppCompatActivity {
 
     RecyclerView rvUsers;
     List<User> users;
@@ -21,6 +21,7 @@ class ListUsers extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_user);
+        db = new LoginDb(this);
 
         RecyclerView.LayoutManager layoutManager
                 = new LinearLayoutManager(this);
@@ -33,6 +34,5 @@ class ListUsers extends AppCompatActivity {
 
         UserAdapter adapter = new UserAdapter(this, users);
         rvUsers.setAdapter(adapter);
-
     }
 }

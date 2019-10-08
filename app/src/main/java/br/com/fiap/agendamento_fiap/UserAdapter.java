@@ -45,7 +45,7 @@ class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder> {
 
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Usuário" + user.getUsername(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Usuário: " + user.getUsername(), Toast.LENGTH_SHORT).show();
             }
         });
 
