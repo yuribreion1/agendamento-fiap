@@ -17,4 +17,71 @@
     <string name="label_button_list_material">Consultar materiais solicitados</string>
     <string name="label_list_users">Listar usuários</string>
     <string name="title_list_users">Usuários cadastrados</string>
+    <string name="label_room_professor">Professor</string>
+    <string name="label_room_sala">Sala</string>
+    <string name="label_room_date">Escolha a data</string>
+    <string name="label_room_date_1">Data</string>
+    <string name="label_room_date_2">Data a ser selecionada</string>
+    <string name="label_room_periodo">Periodo</string>
+
+    <string-array name="professor_array">
+        <item>Allen</item>
+        <item>Humberto</item>
+        <item>Camila</item>
+        <item>Helder</item>
+        <item>Cabral</item>
+        <item>Gabriela</item>
+        <item>Lucas</item>
+        <item>Torrente</item>
+        <item>Ezequiel</item>
+        <item>Agessandro</item>
+    </string-array>
+
+    <string-array name="materiais_array">
+        <item>Projetor</item>
+        <item>Computador - Desktop</item>
+        <item>Notebook</item>
+        <item>Microfone</item>
+        <item>Caixa de Som</item>
+        <item>Iluminacao Especial</item>
+        <item>Canetas para Quadro</item>
+        <item>Flip Chart</item>
+    </string-array>
+
+    <string-array name="parcCli_array">
+        <item>Aula Normal</item>
+        <item>Cliente</item>
+        <item>Parceiro</item>
+        <item>Visita Externa</item>
+    </string-array>
+
+    <string-array name="salas_array">
+        <item>201</item>
+        <item>202</item>
+        <item>203</item>
+        <item>204</item>
+        <item>301</item>
+        <item>302</item>
+        <item>303</item>
+        <item>304</item>
+        <item>401</item>
+        <item>402</item>
+        <item>403</item>
+        <item>404</item>
+        <item>501</item>
+        <item>502</item>
+        <item>503</item>
+        <item>504</item>
+        <item>601</item>
+        <item>602</item>
+        <item>603</item>
+        <item>604</item>
+    </string-array>
+
+    <string-array name="periodos_array">
+        <item>Manha</item>
+        <item>Tarde</item>
+        <item>Noite</item>
+    </string-array>
+
 </resources>
