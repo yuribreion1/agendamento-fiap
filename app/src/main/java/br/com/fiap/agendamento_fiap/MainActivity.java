@@ -52,19 +52,22 @@ public class MainActivity extends AppCompatActivity {
         if (username.equals("")) {
             if (password.equals("")) {
                 Toast.makeText(this, "Usuário e senha em branco", Toast.LENGTH_SHORT).show();
+                return;
             } else {
                 Toast.makeText(this, "Usuário em branco", Toast.LENGTH_SHORT).show();
+                return;
             }
         }
 
-//
-//        if (username.equals(user.getUsername()) && password.equals(user.getPassword()) ) {
-//            Toast.makeText(this, "Usuário cadastrado", Toast.LENGTH_SHORT).show();
-//        } else {
-//            Toast.makeText(this, "Usuário ou senha incorretos", Toast.LENGTH_SHORT).show();
-//        }
 
-        Intent it = new Intent(this, MenuUser.class);
-        startActivity(it);
+        if (username.equals(user.getUsername()) && password.equals(user.getPassword()) ) {
+            Toast.makeText(this, "Usuário cadastrado", Toast.LENGTH_SHORT).show();
+            Intent it = new Intent(this, MenuUser.class);
+            startActivity(it);
+        } else {
+            Toast.makeText(this, "Usuário ou senha incorretos", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
     }
 }

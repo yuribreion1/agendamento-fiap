@@ -48,7 +48,7 @@ public class LoginDb extends SQLiteOpenHelper {
     public User checkUser(String username, String password) {
         User user = new User();
         String sql = "SELECT * FROM user WHERE username = ? AND password = ?";
-        String[] whereArgs = new String[] {"username","password"};
+        String[] whereArgs = new String[] {username, password};
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(sql, whereArgs);
         if (cursor.moveToFirst()) {
