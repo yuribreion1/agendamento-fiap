@@ -1,5 +1,6 @@
 package br.com.fiap.agendamento_fiap;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -24,6 +25,7 @@ public class ListRequestRoom extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_room);
         db = new LoginDb(this);
+        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
 

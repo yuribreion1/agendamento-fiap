@@ -1,5 +1,6 @@
 package br.com.fiap.agendamento_fiap;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +24,7 @@ public class ListUsers extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_user);
         db = new LoginDb(this);
+        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         RecyclerView.LayoutManager layoutManager
                 = new LinearLayoutManager(this);

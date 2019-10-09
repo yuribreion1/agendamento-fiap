@@ -1,6 +1,7 @@
 package br.com.fiap.agendamento_fiap;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +23,7 @@ public class UpdateRequestMaterial extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_request_material);
         btnExcluir = findViewById(R.id.btnExcluir);
+        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         db = new LoginDb(this);
 
