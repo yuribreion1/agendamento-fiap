@@ -39,7 +39,6 @@ public class RequestMaterial extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request_material);
-        getSupportActionBar().hide();
 
         db = new LoginDb(this);
 

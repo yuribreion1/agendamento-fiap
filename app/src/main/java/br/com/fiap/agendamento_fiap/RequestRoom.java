@@ -41,7 +41,6 @@ public class RequestRoom extends AppCompatActivity implements AdapterView.OnItem
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request_room);
-        getSupportActionBar().hide();
         
         db = new LoginDb(this);
 
