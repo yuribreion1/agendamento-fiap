@@ -13,8 +13,8 @@ import br.com.fiap.agendamento_fiap.model.User;
 
 public class LoginDb extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "LoginDb";
-    private static final int DATABASE_VERSION = 1;
+    private static final String DATABASE_NAME = "agendamento-fiap";
+    private static final int DATABASE_VERSION = 2;
 
     public LoginDb(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -27,6 +27,7 @@ public class LoginDb extends SQLiteOpenHelper {
                 "username TEXT NOT NULL," +
                 "password TEXT NOT NULL" +
                 ")";
+
         sqLiteDatabase.execSQL(sql);
     }
 

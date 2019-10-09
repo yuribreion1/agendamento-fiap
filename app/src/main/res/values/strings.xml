@@ -23,6 +23,9 @@
     <string name="label_room_date_1">Data</string>
     <string name="label_room_date_2">Data a ser selecionada</string>
     <string name="label_room_periodo">Periodo</string>
+    <string name="label_room_tipo">Cliente/Parceiro?</string>
+    <string name="label_qnt_alunos">Quantidade de alunos</string>
+    <string name="btn_label_request_room">Solicitar</string>
 
     <string-array name="professor_array">
         <item>Allen</item>

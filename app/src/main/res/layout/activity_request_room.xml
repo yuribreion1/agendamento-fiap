@@ -22,7 +22,7 @@
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="10sp"
         />
 
     <Spinner
@@ -32,7 +32,7 @@
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="10sp"
         />
 
     <TextView
@@ -44,7 +44,7 @@
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="10sp"
         />
 
     <Spinner
@@ -54,7 +54,7 @@
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="10sp"
         />
 
     <TextView
@@ -66,7 +66,7 @@
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="10sp"
         />
 
     <TextView
@@ -74,12 +74,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:layout_margin="20sp"
+        android:layout_margin="10sp"
         android:text="@string/label_room_date_2"
         android:id="@+id/date_label"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:text="@string/label_room_date"
         android:background="@drawable/button_shapes"
@@ -100,17 +100,77 @@
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="10sp"
         />
 
     <Spinner
         android:id="@+id/periodo_spinner"
-        android:layout_width="150dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_room_tipo"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10sp"
+        />
+
+    <Spinner
+        android:id="@+id/tipo_spinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_qnt_alunos"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10sp"
+        />
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:padding="10sp"
+        android:id="@+id/count"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shapes"
+        android:inputType="number"
+        android:textColor="#ed145b"
+        android:textSize="15sp"
+        />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20sp"
+        android:background="@color/colorAccent"
+        android:text="@string/btn_label_request_room"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:onClick="requestRoom"
         />
 
 </LinearLayout>

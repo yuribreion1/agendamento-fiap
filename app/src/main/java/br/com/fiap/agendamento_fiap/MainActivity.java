@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import br.com.fiap.agendamento_fiap.db.LoginDb;
+import br.com.fiap.agendamento_fiap.db.SalaDb;
+import br.com.fiap.agendamento_fiap.model.Sala;
 import br.com.fiap.agendamento_fiap.model.User;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     EditText fieldPassword;
     User user;
     LoginDb loginDb;
+    SalaDb salaDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         fieldSerial     =   findViewById(R.id.serial);
         fieldPassword   =   findViewById(R.id.password);
         loginDb = new LoginDb(this);
+        salaDb = new SalaDb(this);
     }
 
     public void register(View view) {
