@@ -9,6 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.fiap.agendamento_fiap.model.Material;
 import br.com.fiap.agendamento_fiap.model.Sala;
 import br.com.fiap.agendamento_fiap.model.User;
 
@@ -49,6 +50,8 @@ public class LoginDb extends SQLiteOpenHelper {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
+
+//    Criando as tabelas
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(createUserTable);
@@ -56,6 +59,7 @@ public class LoginDb extends SQLiteOpenHelper {
         db.execSQL(createMaterialTable);
     }
 
+//    Dropando as tabelas durante a instalação
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL(dropUserTable);
@@ -64,6 +68,10 @@ public class LoginDb extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    /*
+        Processos referentes a usuário
+
+     */
     public void insertUser(User user) {
         SQLiteDatabase db = getWritableDatabase();
 
@@ -123,6 +131,11 @@ public class LoginDb extends SQLiteOpenHelper {
         return users;
     }
 
+    /*
+        Processos referentes a agendamento de sala
+
+     */
+
     public void insertRoomRequest(Sala sala) {
         SQLiteDatabase db = getWritableDatabase();
 
@@ -163,5 +176,22 @@ public class LoginDb extends SQLiteOpenHelper {
             } while (cursor.moveToNext());
         }
         return salas;
+    }
+
+    /*
+        Processos referentes a agendamento de materais
+     */
+
+    public void insertMaterialRequest(Material material) {
+        SQLiteDatabase db = getWritableDatabase();
+
+        ContentValues cv = new ContentValues();
+        cv.put("professor", material.getProfessor());
+        cv.put("material", material.getMaterial());
+        cv.put("sala", material.getSala());
+        cv.put("data", material.getData());
+        cv.put("periodo", material.getPeriodo());
+
+        db.insert("materiais", null, cv);
     }
 }

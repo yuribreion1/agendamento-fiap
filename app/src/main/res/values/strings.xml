@@ -26,6 +26,7 @@
     <string name="label_room_tipo">Cliente/Parceiro?</string>
     <string name="label_qnt_alunos">Quantidade de alunos</string>
     <string name="btn_label_request_room">Solicitar</string>
+    <string name="label_material_material">Material</string>
 
     <string-array name="professor_array">
         <item>Allen</item>
