@@ -194,4 +194,32 @@ public class LoginDb extends SQLiteOpenHelper {
 
         db.insert("materiais", null, cv);
     }
+
+    public List<Material> listRequestedMaterials() {
+        List<Material> materials = new ArrayList<>();
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.query(
+                "materiais",
+                new String[]{"id","professor","material","sala","data","periodo"},
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+        if (cursor.moveToFirst()) {
+            do {
+                Material material = new Material();
+                material.setId(cursor.getInt(0));
+                material.setProfessor(cursor.getString(1));
+                material.setMaterial(cursor.getString(2));
+                material.setSala(cursor.getString(3));
+                material.setData(cursor.getString(4));
+                material.setPeriodo(cursor.getString(5));
+
+                materials.add(material);
+            } while (cursor.moveToNext());
+        }
+        return materials;
+    }
 }
