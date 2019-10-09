@@ -27,6 +27,19 @@
     <string name="label_qnt_alunos">Quantidade de alunos</string>
     <string name="btn_label_request_room">Solicitar</string>
     <string name="label_material_material">Material</string>
+    <string name="rv_id">Id</string>
+    <string name="rv_professor">Professor</string>
+    <string name="user_example">Humberto Delgado</string>
+    <string name="rv_sala">Sala</string>
+    <string name="sala_example">201</string>
+    <string name="rv_data">Data</string>
+    <string name="data_example">20/01/2019</string>
+    <string name="rv_periodo">Periodo</string>
+    <string name="periodo_example">Manha</string>
+    <string name="rv_tipo">Tipo</string>
+    <string name="tipo_example">Cliente</string>
+    <string name="rv_quantidade">Quantidade de alunos</string>
+    <string name="quantidade_example">20</string>
 
     <string-array name="professor_array">
         <item>Allen</item>
