@@ -1,4 +1,4 @@
-package br.com.fiap.agendamento_fiap;
+package br.com.fiap.agendamento_fiap.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import br.com.fiap.agendamento_fiap.R;
 import br.com.fiap.agendamento_fiap.model.Sala;
 
 public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder> {

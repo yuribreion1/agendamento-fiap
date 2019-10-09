@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import br.com.fiap.agendamento_fiap.adapter.UserAdapter;
 import br.com.fiap.agendamento_fiap.db.LoginDb;
 import br.com.fiap.agendamento_fiap.model.User;
 

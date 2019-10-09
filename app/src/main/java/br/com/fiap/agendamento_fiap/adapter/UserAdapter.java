@@ -1,4 +1,4 @@
-package br.com.fiap.agendamento_fiap;
+package br.com.fiap.agendamento_fiap.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,9 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import br.com.fiap.agendamento_fiap.R;
 import br.com.fiap.agendamento_fiap.model.User;
 
-class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder> {
+public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder> {
 
     private Context context;
     private List<User> users;
