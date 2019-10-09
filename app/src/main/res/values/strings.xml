@@ -43,6 +43,7 @@
     <string name="rv_material">Material</string>
     <string name="material_example">Projetor</string>
     <string name="question_delete">Deseja remover esta solicitação?</string>
+    <string name="label_logoff">Desconectar</string>
 
     <string-array name="professor_array">
         <item>Allen</item>

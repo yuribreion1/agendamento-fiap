@@ -3,6 +3,7 @@ package br.com.fiap.agendamento_fiap;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     User user;
     LoginDb loginDb;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     public void register(View view) {
         Intent it = new Intent(this, RegisterUser.class);
         startActivity(it);
+        finish();
     }
 
     public void login(View view) {
@@ -38,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         String username = fieldSerial.getText().toString();
         String password = fieldPassword.getText().toString();
         user = loginDb.checkUser(username, password);
+        SharedPreferences sp = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor e = sp.edit();
 
         Toast.makeText(this, user.getUsername(), Toast.LENGTH_SHORT).show();
 
@@ -59,8 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
         if (username.equals(user.getUsername()) && password.equals(user.getPassword()) ) {
             Toast.makeText(this, "Usuário autenticado", Toast.LENGTH_SHORT).show();
+            e.putString("username", user.getUsername());
+            e.commit();
             Intent it = new Intent(this, MenuUser.class);
             startActivity(it);
+            finish();
         } else {
             Toast.makeText(this, "Usuário ou senha incorretos", Toast.LENGTH_SHORT).show();
             return;

@@ -1,6 +1,7 @@
 package br.com.fiap.agendamento_fiap;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
@@ -31,6 +32,15 @@ public class MenuUser extends AppCompatActivity {
 
     public void listRoomRequests(View view) {
         Intent it = new Intent(this, ListRequestRoom.class);
+        startActivity(it);
+    }
+
+    public void Disconnect(View view) {
+        SharedPreferences sp = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor edit = sp.edit();
+        edit.clear();
+        edit.commit();
+        Intent it = new Intent(this, MainActivity.class);
         startActivity(it);
     }
 }
