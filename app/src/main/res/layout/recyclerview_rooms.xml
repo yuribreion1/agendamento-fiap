@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="@string/user_example"
-            android:id="@+id/professor"/>
+            android:id="@+id/professor_room"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sala_example"
-            android:id="@+id/sala"
+            android:id="@+id/sala_room"
             />
 
         <TextView
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/data_example"
-            android:id="@+id/data"
+            android:id="@+id/data_room"
             />
 
         <TextView
@@ -73,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/periodo_example"
-            android:id="@+id/periodo"
+            android:id="@+id/periodo_room"
             />
 
         <TextView

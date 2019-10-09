@@ -38,10 +38,10 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
         final Sala sala = this.salas.get(position);
 
         holder.id.setText(String.valueOf(sala.getId()));
-        holder.professor.setText(sala.getProfessor());
-        holder.sala.setText(sala.getSala());
-        holder.data.setText(sala.getData());
-        holder.periodo.setText(sala.getPeriodo());
+        holder.professor_room.setText(sala.getProfessor());
+        holder.sala_room.setText(sala.getSala());
+        holder.data_room.setText(sala.getData());
+        holder.periodo_room.setText(sala.getPeriodo());
         holder.tipo.setText(sala.getTipo());
         holder.count.setText(sala.getQuantidade());
 
@@ -62,10 +62,10 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
     public static class RoomViewHolder extends RecyclerView.ViewHolder {
         CardView cardview;
         TextView id;
-        TextView professor;
-        TextView sala;
-        TextView data;
-        TextView periodo;
+        TextView professor_room;
+        TextView sala_room;
+        TextView data_room;
+        TextView periodo_room;
         TextView tipo;
         TextView count;
 
@@ -74,10 +74,10 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
 
             cardview = (CardView) itemView;
             id = itemView.findViewById(R.id.id);
-            professor = itemView.findViewById(R.id.professor);
-            sala = itemView.findViewById(R.id.sala);
-            data = itemView.findViewById(R.id.data);
-            periodo = itemView.findViewById(R.id.periodo);
+            professor_room = itemView.findViewById(R.id.professor_room);
+            sala_room = itemView.findViewById(R.id.sala_room);
+            data_room = itemView.findViewById(R.id.data_room);
+            periodo_room = itemView.findViewById(R.id.periodo_room);
             tipo = itemView.findViewById(R.id.tipo);
             count = itemView.findViewById(R.id.count);
 

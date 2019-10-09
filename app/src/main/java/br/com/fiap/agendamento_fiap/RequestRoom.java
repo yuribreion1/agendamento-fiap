@@ -73,8 +73,6 @@ public class RequestRoom extends AppCompatActivity implements AdapterView.OnItem
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String selecao = parent.getItemAtPosition(position).toString();
-        Toast.makeText(this,selecao, Toast.LENGTH_SHORT).show();
     }
 
     @Override

@@ -169,8 +169,9 @@ public class LoginDb extends SQLiteOpenHelper {
                 sala.setProfessor(cursor.getString(1));
                 sala.setSala(cursor.getString(2));
                 sala.setData(cursor.getString(3));
-                sala.setTipo(cursor.getString(4));
-                sala.setQuantidade(cursor.getString(5));
+                sala.setPeriodo(cursor.getString(4));
+                sala.setTipo(cursor.getString(5));
+                sala.setQuantidade(cursor.getString(6));
 
                 salas.add(sala);
             } while (cursor.moveToNext());
