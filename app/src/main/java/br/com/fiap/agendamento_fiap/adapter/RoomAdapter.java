@@ -1,11 +1,11 @@
 package br.com.fiap.agendamento_fiap.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import br.com.fiap.agendamento_fiap.R;
+import br.com.fiap.agendamento_fiap.UpdateRequestRoom;
 import br.com.fiap.agendamento_fiap.model.Sala;
 
 public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder> {
@@ -50,7 +51,9 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
 
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "Solicitação para : " + sala.getProfessor(), Toast.LENGTH_SHORT).show();
+                Intent it = new Intent(context, UpdateRequestRoom.class);
+                it.putExtra("sala",sala);
+                context.startActivity(it);
             }
         });
     }
@@ -81,7 +84,6 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
             periodo_room = itemView.findViewById(R.id.periodo_room);
             tipo = itemView.findViewById(R.id.tipo);
             count = itemView.findViewById(R.id.count);
-
         }
 
     }

@@ -1,6 +1,8 @@
 package br.com.fiap.agendamento_fiap.model;
 
-public class Material {
+import java.io.Serializable;
+
+public class Material implements Serializable {
     private int id;
     private String professor;
     private String material;

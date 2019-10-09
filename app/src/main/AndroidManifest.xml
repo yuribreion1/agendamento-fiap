@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterUser"/>
+        <activity android:name=".UpdateRequestMaterial"/>
+        <activity android:name=".UpdateRequestRoom"/>
         <activity android:name=".ListUsers"/>
         <activity android:name=".MenuUser"/>
         <activity android:name=".RequestRoom"/>

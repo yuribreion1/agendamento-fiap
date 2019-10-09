@@ -1,6 +1,8 @@
 package br.com.fiap.agendamento_fiap.model;
 
-public class Sala {
+import java.io.Serializable;
+
+public class Sala implements Serializable{
     private int id;
     private String professor;
     private String sala;

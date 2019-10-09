@@ -1,6 +1,7 @@
 package br.com.fiap.agendamento_fiap.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import br.com.fiap.agendamento_fiap.R;
+import br.com.fiap.agendamento_fiap.UpdateRequestMaterial;
+import br.com.fiap.agendamento_fiap.UpdateRequestRoom;
 import br.com.fiap.agendamento_fiap.model.Material;
 
 public class MaterialAdapter extends RecyclerView.Adapter<MaterialAdapter.MaterialViewHolder> {
@@ -49,7 +52,9 @@ public class MaterialAdapter extends RecyclerView.Adapter<MaterialAdapter.Materi
 
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "Solicitação para: " + material.getMaterial(), Toast.LENGTH_SHORT).show();
+                Intent it = new Intent(context, UpdateRequestMaterial.class);
+                it.putExtra("material", material);
+                context.startActivity(it);
             }
         });
 

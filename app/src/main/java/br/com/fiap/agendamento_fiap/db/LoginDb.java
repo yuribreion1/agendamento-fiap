@@ -179,6 +179,11 @@ public class LoginDb extends SQLiteOpenHelper {
         return salas;
     }
 
+    public void deleteRequestRoom(int id) {
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete("salas","id = ?", new String[]{String.valueOf(id)});
+    }
+
     /*
         Processos referentes a agendamento de materais
      */
@@ -222,5 +227,10 @@ public class LoginDb extends SQLiteOpenHelper {
             } while (cursor.moveToNext());
         }
         return materials;
+    }
+
+    public void deleteRequestMaterial(int id) {
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete("materiais","id = ?", new String[]{String.valueOf(id)});
     }
 }
