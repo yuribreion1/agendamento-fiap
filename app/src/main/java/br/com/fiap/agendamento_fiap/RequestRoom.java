@@ -19,7 +19,6 @@ import java.text.DateFormat;
 import java.util.Calendar;
 
 import br.com.fiap.agendamento_fiap.db.LoginDb;
-import br.com.fiap.agendamento_fiap.db.SalaDb;
 import br.com.fiap.agendamento_fiap.model.Sala;
 
 public class RequestRoom extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
@@ -30,7 +29,7 @@ public class RequestRoom extends AppCompatActivity implements AdapterView.OnItem
     Spinner spinnerTipo;
     EditText countStudents;
     Sala requestSala;
-    SalaDb db;
+    LoginDb db;
 
     Calendar myCalendar = Calendar.getInstance();
     int year = myCalendar.get(Calendar.YEAR);
@@ -44,7 +43,7 @@ public class RequestRoom extends AppCompatActivity implements AdapterView.OnItem
         setContentView(R.layout.activity_request_room);
         getSupportActionBar().hide();
         
-        db = new SalaDb(this);
+        db = new LoginDb(this);
 
         countStudents = findViewById(R.id.count);
         spinnerProfessor = findViewById(R.id.professor_spinner);

@@ -4,15 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import br.com.fiap.agendamento_fiap.db.LoginDb;
-import br.com.fiap.agendamento_fiap.db.SalaDb;
-import br.com.fiap.agendamento_fiap.model.Sala;
 import br.com.fiap.agendamento_fiap.model.User;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     EditText fieldPassword;
     User user;
     LoginDb loginDb;
-    SalaDb salaDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         fieldSerial     =   findViewById(R.id.serial);
         fieldPassword   =   findViewById(R.id.password);
         loginDb = new LoginDb(this);
-        salaDb = new SalaDb(this);
     }
 
     public void register(View view) {
@@ -65,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (username.equals(user.getUsername()) && password.equals(user.getPassword()) ) {
-            Toast.makeText(this, "Usuário cadastrado", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Usuário autenticado", Toast.LENGTH_SHORT).show();
             Intent it = new Intent(this, MenuUser.class);
             startActivity(it);
         } else {
