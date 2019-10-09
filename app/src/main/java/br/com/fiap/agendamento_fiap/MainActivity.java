@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.microsoft.applicationinsights.TelemetryConfiguration;
+
 import br.com.fiap.agendamento_fiap.db.LoginDb;
 import br.com.fiap.agendamento_fiap.model.User;
 
@@ -30,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
         fieldSerial     =   findViewById(R.id.serial);
         fieldPassword   =   findViewById(R.id.password);
         loginDb = new LoginDb(this);
+
+        String instrumentationKey = "068a6990-4069-4371-a8e6-04616fedace4";
+
+        if (instrumentationKey != null)
+        {
+            TelemetryConfiguration.getActive().setInstrumentationKey(instrumentationKey);
+        }
     }
 
     public void register(View view) {
